@@ -62,6 +62,20 @@ ul {
 .list-li:not(:last-child) {
   margin-right: 50px;
 }
+.list-li {
+  position: relative;
+}
+.current::after {
+  content: '';
+  display: inline-block;
+  background: #2196f3;
+  border-radius: 2px;
+  opacity: 1;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  bottom: -1px;
+}
 /* Header contacts */
 .contacts {
   color: #757575;
@@ -176,12 +190,30 @@ ul {
 
   margin-bottom: 50px;
 }
-.section.work li {
-  list-style: none;
-}
 .ul-work {
   display: flex;
   justify-content: space-between;
+}
+.ul-work > li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  outline: 1px solid tomato;
+}
+.work-description {
+  position: absolute;
+  bottom: 0;
+
+  padding: 27px 0px;
+  width: 100%;
+
+  background-color: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 /* Index - Section 4 (Our Team) */
 .our-team {

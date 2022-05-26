@@ -194,11 +194,13 @@ ul {
   display: flex;
   justify-content: space-between;
 }
+.ul-work img {
+  display: block;
+}
 .ul-work > li {
   list-style: none;
   display: inline-block;
   position: relative;
-  outline: 1px solid tomato;
 }
 .work-description {
   position: absolute;
@@ -229,6 +231,9 @@ ul {
   list-style: none;
   display: flex;
   justify-content: space-between;
+}
+.team-list img {
+  display: block;
 }
 .section4-h3 {
   font-weight: 500;

@@ -427,6 +427,8 @@ ul {
   margin-bottom: 30px;
   margin-left: 30px;
   cursor: pointer;
+
+  position: relative;
 }
 .list-projects > li:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -442,9 +444,6 @@ ul {
   display: block;
   margin-bottom: 20px;
 }
-.project-div {
-  position: relative;
-}
 .project-hover {
   position: absolute;
   top: 0;
@@ -456,7 +455,7 @@ ul {
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
 }
-.project-div:hover .project-hover {
+.projects-li:hover .project-hover {
   opacity: 1;
 }
 .projects-title {

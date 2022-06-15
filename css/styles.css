@@ -604,7 +604,6 @@ ul {
   width: 100%;
   height: 100%;
   text-decoration: none;
-  box-shadow: none;
 
   transition-property: box-shadow;
   transition-duration: 250ms;
@@ -637,16 +636,12 @@ ul {
 .projects-li > a:focus .project-hover {
   transform: translateY(0%);
 }
-.projects-li {
-  overflow: hidden;
-}
 .projects-li > a:visited {
   color: inherit;
 }
 .project-wrapper {
   position: relative;
   overflow: hidden;
-  height: 294px;
 }
 .project-wrapper2 {
   padding-inline: 24px;
